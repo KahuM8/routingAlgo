@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class core {
+public class Main {
 
     public static void main(String[] args) {
         String inst = "n32-k5"; // or "n80-k10"
