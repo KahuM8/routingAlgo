@@ -1,8 +1,11 @@
 javac src/*.java -d bin
 
 
+cd bin
 
-jar cf core.jar
+jar cfm ../core.jar ../manifest.txt ./
+
+cd ../
 
 
 java -jar core.jar 
