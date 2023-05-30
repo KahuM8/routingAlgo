@@ -25,3 +25,8 @@ Python main.py
 (if the program shortcut is python)
 
 python main.py
+
+
+@Author
+Kahu Mulligan
+300572890
