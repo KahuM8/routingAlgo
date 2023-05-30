@@ -2,38 +2,6 @@ import matplotlib.pyplot as plt
 import math
 
 
-def calculate_euclidean_distance(px, py, index1, index2):
-
-    """
-    Calculating the Euclidean distances between two nodes
-
-    :param px: List of X coordinates for each node.
-    :param py: List of Y coordinates for each node.
-    :param index1: Node 1 index in the coordinate list.
-    :param index2: Node 2 index in the coordinate list.
-    :return: Euclidean distance between node 1 and 2.
-    """
-
-    # TODO - Implement the euclidean distance function.
-
-    return None
-
-
-def calculate_total_distance(routes, px, py, depot):
-
-    """
-    Calculating the total Euclidean distance of a solution.
-
-    :param routes: List of routes (list of lists).
-    :param px: List of X coordinates for each node.
-    :param py: List of Y coordinates for each node.
-    :param depot: Depot.
-    :return: Total tour euclidean distance.
-    """
-
-    # TODO - Implement function for finding the total euclidean distance of the learned tour.
-
-    return None
 
 
 def visualise_solution(vrp_sol, px, py, depot, title):

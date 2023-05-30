@@ -9,4 +9,6 @@ cd ../
 
 java -jar core.jar 
 
+py run.py
+
 pause 

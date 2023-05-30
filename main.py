@@ -6,7 +6,7 @@ import numpy as np
 def main():
 
     # Paths to the data and solution files.
-    vrp_file = "n32-k5nn.vrp"  # "data/n80-k10.vrp"
+    vrp_file = "n32-k5.vrp"  # "data/n80-k10.vrp"
 
 
     # Loading the VRP data file.
@@ -18,4 +18,6 @@ def main():
     utility.visualise_solution(vrp_best_sol1, px, py, depot, "nearest neighbour")
     utility.visualise_solution(vrp_best_sol2, px, py, depot, "savings")
 
+
+main() # Calling main function.
 

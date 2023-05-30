@@ -31,7 +31,7 @@ public class Utility {
             List<Integer> route = solution.getRoutes().get(i);
             VRPNode current = depot;
             for (int j = 0; j < route.size(); j++) {
-                VRPNode next = instance.getNodes().get(route.get(j));
+                VRPNode next = instance.getNodes().get(route.get(j) + 1);
                 sum += calculateEuclideanDistance(current, next);
                 current = next;
             }
@@ -80,6 +80,13 @@ public class Utility {
             }
             routes.add(route);
         }
+
+        // decrement each of the stop ids by 1
+        for (List<Integer> route : routes) {
+            for (int i = 0; i < route.size(); i++) {
+                route.set(i, route.get(i) - 1);
+            }
+        }
         return new VRPSolution(routes);
     }
 
@@ -120,6 +127,13 @@ public class Utility {
                 break;
             removeContainedRoutes(routes, bestMerge);
             routes.add(bestMerge);
+        }
+
+        // decrement each of the stop ids by 1
+        for (List<Integer> route : routes) {
+            for (int i = 0; i < route.size(); i++) {
+                route.set(i, route.get(i) - 1);
+            }
         }
 
         return new VRPSolution(routes);
