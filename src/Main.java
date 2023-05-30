@@ -16,5 +16,8 @@ public class Main {
 
         VRPIO.writeSolution(nnSol, "files/" + inst + "nn.sol");
         VRPIO.writeSolution(svSol, "files/" + inst + "sv.sol");
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println("\n complete! Check the files folder for the solutions. \n");
+        System.out.println("-----------------------------------------------------------------");
     }
 }
